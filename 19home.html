@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media screen and (min-width: 1200px) {
+        .container{
+	    height: 60px;
+        display: flex;
+        width: 100%;
+        }
+        .container div:nth-child(1){
+        background-color: red;
+        width: 25%;
+    }
+    .container div:nth-child(2){
+        background-color: blue;
+        width:25%
+    }
+    .container div:nth-child(3){
+        background-color: black;
+        width: 25%;
+    }
+    .container div:nth-child(4){
+        background-color: orange;
+        width: 25%;
+    }
+    }
+    @media screen and (max-width: 1200px) {
+        .container{
+	    height: 60px;
+        display: inline-flex;
+        width: 100%;
+        flex-wrap:wrap;
+        }
+        .container div:nth-child(1){
+        background-color: red;
+        width: 100%;
+    }
+    .container div:nth-child(2){
+        background-color: blue;
+        width: 33.333333333%;
+    }
+    .container div:nth-child(3){
+        background-color: black;
+        width: 33.333333333333%;
+    }
+    .container div:nth-child(4){
+        background-color: orange;
+        width: 33.33333333333%;
+    }
+    }    
+    @media screen and (max-width: 992px) {
+        .container{
+	    height: 60px;
+        display: inline-flex;
+        width: 100%;
+        flex-wrap:wrap;
+        }
+        .container div:nth-child(1){
+        background-color: red;
+        width: 50%;
+    }
+    .container div:nth-child(2){
+        background-color: blue;
+        width: 50%;
+    }
+    .container div:nth-child(3){
+        background-color: black;
+        width: 50%;
+    }
+    .container div:nth-child(4){
+        background-color: orange;
+        width: 50%;
+    }
+    }
+      
+    @media screen and (max-width: 768px) {
+        .container{
+	    height: 60px;
+        display: inline-flex;
+        width: 100%;
+        flex-wrap:wrap;
+        }
+        .container div:nth-child(1){
+        background-color: red;
+        width: 100%;
+    }
+    .container div:nth-child(2){
+        background-color: blue;
+        width: 100%;
+    }
+    .container div:nth-child(3){
+        background-color: black;
+        width: 100%;
+    }
+    .container div:nth-child(4){
+        background-color: orange;
+        width: 100%;
+    }
+    }
+</style>
+<body>
+    <div class='container'>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>    
+        <div>4</div>
+    </div>
+</body>
+</html>
